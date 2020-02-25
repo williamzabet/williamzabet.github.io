@@ -1,0 +1,9 @@
+h1 {
+    color: cornsilk;
+}
+
+header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blueviolet;
