@@ -8,18 +8,18 @@ body {
 h1, h2 {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', ;
+    font-family: 'Roboto Condensed';
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     text-shadow: -2px 2px #F2A88D;
 }
 
 h2 {
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .header {
@@ -45,6 +45,7 @@ padding: 15px;
     height: 265px;
     border-radius: 4px;
     border: solid 1px #142B59;
+    max-width: 100%;
 }
 
 .container {
@@ -79,6 +80,7 @@ padding: 15px;
 
 .roles {
     flex: 0 2 auto;
+    font-family: 'Roboto Condensed';
     border-radius: 4px;
     background: white;
     padding: 15px;
@@ -86,7 +88,7 @@ padding: 15px;
 }
 
 .title {
-    font-family: 'Open Sans', ;
+    font-family: 'Roboto Condensed';
     font-weight: 400;
     font-style: italic;
     font-size: 1.2rem;
@@ -98,6 +100,18 @@ padding: 15px;
     margin-bottom: 15px;
 }
 
-div {
-    display: block;
+@media screen and (max-width: 1000px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .me {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        flex: 1 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
