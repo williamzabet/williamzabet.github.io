@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="header">Prof A's Demo Page</div>
+        <div class="header">William Zabet's Demo Page</div>
         <button class="button" onclick="clickMe()">
           Click me to make a change
         </button>
@@ -29,7 +29,39 @@
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
       }
+      
+      document.querySelector("title").innerHTML = "William Zabet's Lab 4";
+      document.querySelector(".header").innerHTML = "William Zabet's Lab 4 ";
+
+      let element = document.querySelector('.content');
+
+      let pr1 = document.createElement('p');
+      pr1.className = 'para1';
+
+      let pr2 = document.createElement('p');
+      pr2.className = 'para2';
+
+      element.appendChild(pr1);
+      element.appendChild(pr2);
+
+      let myName = 'William Zabet';
+      let length = myName.length;
+      pr1.innerHTML = "My name has 12 characters";
+
+      let three = myName.substr(2,1);
+      let upper = three.toLocaleUpperCase();
+      let final = myName.substr(10, 13);
+      pr2.innerHTML = 'The third character in my name is ' + upper + "<br>" + "Final 3 letters: " + final;
+
+
+      let first = myName.substr(0,7);
+      let last = myName.substr(8,13);
+      let f1 = first.length;
+      let l1 = last.length;
+      let total = document.createTextNode(f1+l1);
+      let h = document.querySelector(".header");
+      h.appendChild(total);
+      
     </script>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
