@@ -268,6 +268,7 @@
 
 
     document.querySelector(".header").innerHTML = "William's List of Countries";
+    document.querySelector("title").innerHTML = "William's List of Countries";
 
     const content = document.querySelector('.content');
     let list = document.createElement('ol');
@@ -286,6 +287,9 @@
         array[array.length] = randomCountry;
       }
     }
+    var filtered = countries.filter(function(num) {
+      if (array.indexOf(num) === -1) console.log(num);
+    });
     return array;
     }
 
@@ -322,18 +326,6 @@
         list.appendChild(li1);
     });
     }
-
- 
- 
-
-
-
-
-    
-
-
-    
-
 
 
   </script>
