@@ -3,36 +3,21 @@
 
 <head>
   <title>Test JSON page</title>
-  <link rel="stylesheet" type="text/css" href="./lab_styles.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
   <div class="container">
     <div class="wrapper">
       <div class="header">Test JSON page</div>
-      <!-- <button class="button" onclick="loadData()">Load Some JSON</button> -->
-      <button class="button" onclick="console.log('You haven\'t written a function yet!');">Click me to replace list
+      <button class="activate">Click me to replace list
         entries</button>
       <div class="content">
-        <ul class="instructions">
-          <li>At the click of the button above</li>
-          <li>Replace this list</li>
-          <li>With an ordered list</li>
-          <li>Of fifty randomly-selected countries</li>
-          <li>Every time you click the above button</li>
-          <li>The list of countries should change</li>
-          <ol>
-            <li>Use your Developer tools to experiment with possible answers</li>
-            <li>When you have an idea of the correct code</li>
-            <li>Write it into your copy of the Lab HTML</li>
-            <li>And save it for submission</li>
-          </ol>
-        </ul>
       </div>
       <div class="footer"></div>
     </div>
   </div>
-  <script>
+  <script> 
     /* N.B. - For your lab, use the variable "countries" now available on the window space */
     const countries = [
       { "name": "Afghanistan", "code": "AF" },
@@ -280,6 +265,77 @@
       { "name": "Zimbabwe", "code": "ZW" }
     ]
     console.log("List of countries in the world", countries);
+
+
+    document.querySelector(".header").innerHTML = "William's List of Countries";
+
+    const content = document.querySelector('.content');
+    let list = document.createElement('ol');
+    list.className = 'countries';
+    content.appendChild(list)
+
+    function randomCountries() {
+    for (var i = 0, array = []; i < 25; i++)
+    {
+      const randomCountry = countries[Math.floor(Math.random() * countries.length)];
+
+      if (array.indexOf(randomCountry) === -1) {
+        array[array.length] = randomCountry;
+      }
+      else {
+        array[array.length] = randomCountry;
+      }
+    }
+    return array;
+    }
+
+    const btn = document.querySelector('button');
+
+    randomCountries().forEach(function (rc) {
+      var li = document.createElement('li');
+      var bold = document.createElement('span');
+      var norm = document.createElement('span');
+      var space = document.createTextNode(' ')
+      bold.innerHTML = rc.code;
+      bold.style.fontWeight = 'bold';
+      norm.innerHTML = rc.name;
+      norm.style.fontWeight = 'normal';
+      li.appendChild(bold);
+      li.append(space);
+      li.appendChild(norm);
+      list.appendChild(li);
+    });
+
+    
+    btn.onclick = function() {
+      randomCountries().forEach(function (rc) {
+        var li1 = document.querySelector('li');
+        var bold1 = document.createElement('span');
+        var norm1 = document.createElement('span');
+        var space1 = document.createElement('span');
+        space1.innerHTML = ' ';
+        bold1.innerHTML = rc.code;
+        bold1.style.fontWeight = 'bold';
+        norm1.innerHTML = rc.name;
+        norm1.style.fontWeight = 'normal';
+        li1.innerHTML = bold1.outerHTML+space1.outerHTML+norm1.outerHTML;
+        list.appendChild(li1);
+    });
+    }
+
+ 
+ 
+
+
+
+
+    
+
+
+    
+
+
+
   </script>
 </body>
 
