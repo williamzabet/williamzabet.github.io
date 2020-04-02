@@ -1,11 +1,14 @@
-h1 {
-  font-family: helvetica, arial, sans-serif;
+h1, h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+  font-weight: bolder;
   text-align: center;
 }
 
 body {
   width: 640px;
   margin: 0 auto;
+  background-color: mistyrose;
 }
 
 .full-img {
@@ -21,16 +24,18 @@ body {
   left: 0;
   width: 640px;
   height: 480px;
-  background-color: rgba(0,0,0,0);
 }
 
 button {
+  /* 
+  link: https://www.w3schools.com/css/css3_buttons.asp
+  Helped w/ button styling
+  */
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: bolder;
   border: 0;
-  background: rgba(150,150,150,0.6);
-  text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
+  background: dimgray;
   position: absolute;
-  cursor: pointer;
   top: 2px;
   left: 2px;
 }
@@ -39,7 +44,6 @@ button {
   display: block;
   width: 20%;
   float: left;
-  cursor: pointer;
 }
 
 .gallery {
