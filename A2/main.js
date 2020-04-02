@@ -9,7 +9,8 @@ const overlay = document.querySelector('.overlay');
 
 for(let i = 1; i <= 5; i++) {
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/pic' + i + '.jpg');
+    let xxx = 'images/pic' + i + '.jpg';
+    newImage.setAttribute('src', xxx);
     thumbBar.appendChild(newImage);
     newImage.onclick = function(replace) {
       displayedImage.src = replace.target.src;
