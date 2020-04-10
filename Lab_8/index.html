@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Charts Lab</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">Frontend Libraries: Charts Lab</div>
+        <div class="content">
+          <div id="chartContainer" style="height: 700px; width: 100%;"></div>
+        </div>
+        <div class="footer">Let's eat out in the future!</div>
+      </div>
+    </div>
+    <script>
+      // reference: Professor Leitch's Lab 8 walkthrough
+      fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        const clearEmptyData = data.filter((f) => f.geocoded_column_1);
+        const refined = clearEmptyData.map((m) => ({
+          category: m.category,
+          name: m.name,
+        }));
+        return refined;
+      })
+      .then((data) => {
+        return data.reduce((result, current) => {
+          if (!result[current.category]) {
+            result[current.category] = [];
+          }
+          result[current.category].push(current);
+          return result;
+        }, {});
+      })
+      .then((data) => {
+        console.log('new data', data);
+        const reformattedData = Object.entries(data).map((current, i) => {
+          console.log(current);
+          return {
+            y: current[1].length,
+            label: current[0],
+          };
+        });
+
+        return reformattedData;       
+      })
+      .then((results) => {
+        console.log(results);
+        const chart = new CanvasJS.Chart('chartContainer', {
+          animationEnabled: true,
+          theme: "dark2",
+          title: {
+            text: "Places to Eat",
+          },
+          axisX: {
+            labelBackgroundColor: "black",
+            labelFontColor: "white",
+            labelFontSize: 14,
+            margin: 10,
+            interval: 1,
+          },
+          axisY: {
+            scaleBreaks: {
+              customBreaks: [
+                {
+                  startValue: 5,
+                  endValue: 10,
+                },
+                {
+                  startValue: 30,
+                  endValue: 35,
+                },
+                {
+                  startValue: 135,
+                  endValue: 140,
+                },
+              ],
+            },
+          },
+          data: [
+            {
+              type: "bar",
+              dataPoints: results
+            },
+          ],
+        });
+        chart.render();
+      });
+    </script>
+  </body>
+</html>
