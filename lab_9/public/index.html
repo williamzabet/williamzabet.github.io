@@ -4,22 +4,67 @@
 <head>
   <title>Replace Me With Your Lab Page</title>
   <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="wrapper">
       <div class="header">Replace Me With Your Lab Page</div>
-      <div class="content"></div>
+      <div class="content">
+        <div id="chartContainer" style="height: 700px; width: 100%;"></div>
+      </div>
       <div class="footer"></div>
     </div>
   </div>
   <script>
     fetch('/api') // Rather than fetching from PG County, we're going to fetch from our own server.
-      .then(res => res.json())
-      .then(res => {
-        // Here's where your chart code should go.
-      })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        const chart = new CanvasJS.Chart('chartContainer', {
+          animationEnabled: true,
+          theme: 'dark2',
+          title: {
+            text: 'Places to Eat',
+          },
+          axisX: {
+            labelBackgroundColor: 'black',
+            labelFontColor: 'white',
+            labelFontSize: 14,
+            margin: 10,
+            interval: 1,
+          },
+          axisY: {
+            interlacedColor: 'rgba(1,77,101,.2)',
+            gridColor: 'rgba(1,77,101,.1)',
+            scaleBreaks: {
+              type: 'straight',
+              customBreaks: [
+                {
+                  startValue: 5,
+                  endValue: 10,
+                },
+                {
+                  startValue: 30,
+                  endValue: 35,
+                },
+                {
+                  startValue: 135,
+                  endValue: 140,
+                },
+              ],
+            },
+          },
+          data: [
+            {
+              type: 'bar',
+              dataPoints: res.reformattedData
+            },
+          ],
+        });
+        chart.render();
+      });
   </script>
 </body>
 
