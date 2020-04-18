@@ -49,8 +49,8 @@
 
         return reformattedData;       
       })
-      .then((results) => {
-        console.log(results);
+      .then((reformattedData) => {
+        console.log(reformattedData);
         const chart = new CanvasJS.Chart('chartContainer', {
           animationEnabled: true,
           theme: "dark2",
@@ -88,7 +88,7 @@
           data: [
             {
               type: "bar",
-              dataPoints: results
+              dataPoints: reformattedData
             },
           ],
         });
