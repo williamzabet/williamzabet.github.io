@@ -28,7 +28,6 @@ function processDataForFrontEnd(req, res) {
     // you will process your data here
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
       const clearEmptyData = data.filter((f) => f.geocoded_column_1);
       const refined = clearEmptyData.map((m) => ({
         category: m.category,
