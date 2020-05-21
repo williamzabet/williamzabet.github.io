@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Chelsea Market';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chelsea Market'), local('ChelseaMarket-Regular'), url(https://fonts.gstatic.com/l/font?kit=BCawqZsHqfr89WNP_IApC8tzKBhgLAguK2_j-nwdjxuq2B8Gy737Lkd9YPkXRx5sGlCTVJmmDg4MIbViCikBC1UkVxSh56wvjp1M6RKO6fqW8RA77SkW7OX0WObDOh56ug&skey=bc7514ae069c6e6d&v=v7) format('woff2');
+}
