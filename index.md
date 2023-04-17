@@ -2,9 +2,9 @@
 
 ---
 
-### Deep NLP for hate speech detection
+### Few-shot learning Sentiment Analysis with GPT-3.5
 
-Hate speech detection is the automated task of determining whether a piece of text contains hateful content. In this project, I built a classifier using PyTorch to fine-tune a BERT model.
+Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a classifier using the OpenAI Chat API, and optimized it with a semantic similarity pipeline using SBERT.
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-black?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/YouTube-black?logo=youtube)](#) [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/OpenAI-black?logo=openai)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white)](#)
 
