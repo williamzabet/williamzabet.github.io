@@ -4,7 +4,7 @@
 
 ### Few-shot learning Sentiment Analysis with GPT-3.5
 
-Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a classifier using the OpenAI Chat API, and optimized it with a semantic similarity pipeline using SBERT.
+Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a text classifier using OpenAI's Chat API, combined with a semantic similarity pipeline using SBERT for generating optimized prompt examples. 
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-black?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/YouTube-black?logo=youtube)](#) [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/OpenAI-black?logo=openai)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white)](#)
 
