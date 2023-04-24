@@ -8,7 +8,7 @@ Sentiment analysis is target-oriented, aiming to identify opinions or attitudes 
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-black?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/YouTube-black?logo=youtube)](#) [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/OpenAI-black?logo=openai)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white)](#)
 
-[View code on Colab](https://drive.google.com/file/d/1QdwMAsxRfX_XVrdrPs0Rfdxqs-Yyoid8/view?usp=sharing)
+[View code on Colab](https://colab.research.google.com/drive/1QdwMAsxRfX_XVrdrPs0Rfdxqs-Yyoid8?usp=sharing)
 
 ---
 
