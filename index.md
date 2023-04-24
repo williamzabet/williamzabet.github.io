@@ -1,4 +1,4 @@
-## Selected projects in data science, machine learning and NLP
+## Selected projects in Data Science, Machine Learning, and NLP
 
 ---
 
@@ -6,13 +6,11 @@
 
 Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a text classifier using OpenAI's Chat API, combined with a semantic similarity pipeline using SBERT for generating optimized prompt examples. 
 
-<p align="center">
  <img src="https://drive.google.com/uc?id=1IAB6nWBJL87ABsSNZ0KMp25TggJ2x4_h"  width="300" height="150">
-</p>
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-black?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/YouTube-black?logo=youtube)](#) <br />
 [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/OpenAI-black?logo=openai)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white)](#)
-
+ 
 [View code on Colab](https://colab.research.google.com/drive/1QdwMAsxRfX_XVrdrPs0Rfdxqs-Yyoid8?usp=sharing)
 
 ---
