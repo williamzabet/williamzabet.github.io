@@ -3,11 +3,13 @@ logo: "/images/linkedin.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br>
   Data Scientist / Software Engineer
+  <br>
   Email: williamzabet@yahoo.com
-  <br><br>
+  <br>
   -
-  <br><br>
+  <br>
   <a href="https://www.linkedin.com/in/williamzabet/">View my LinkedIn Profile</a>
+  <br>
   <a href="https://github.com/williamzabet">View my GitHub</a>
   
 theme: jekyll-theme-minimal
