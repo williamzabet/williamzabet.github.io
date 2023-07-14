@@ -30,7 +30,7 @@ For this, I used various ML techniques including: (i) Kmeans++, KNN (ii) Content
 ---
 
 ### spotify2mp3 - Downloading your favorite Spotify Playlists to your local folder. 
-This Project makes use of HTTP requests, the Spotify API, YouTube API, and finally selenium to import a Spotify to a local folder on your device.
+This Project makes use of HTTP requests, the Spotify API, YouTube API, and finally selenium to import a Spotify playlist to a local folder on your device.
 
 <img src="images/spotify2mp3.png?raw=true" width="300" height="150"/>
 
