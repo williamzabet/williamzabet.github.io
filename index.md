@@ -2,6 +2,20 @@
 
 ---
 
+### ZIP-Code–Driven Real Estate Data Ingestion & Analytics Platform
+
+Designed and implemented a data ingestion and enrichment pipeline that aggregates real-estate listings by ZIP code across multiple major platforms. The system normalizes site-specific schemas and merges results with public Maryland property records stored in an on-prem SQL database, producing clean, analytics-ready datasets.
+
+The resulting data model is structured to support downstream geospatial visualization and ZIP-level analysis, enabling interactive exploration of property attributes once connected to a visualization layer.
+
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#)
+[![](https://img.shields.io/badge/Node.js-black?logo=node.js)](#)
+[![](https://img.shields.io/badge/SQL-white?logo=postgresql)](#)
+[![](https://img.shields.io/badge/Web%20Scraping-black?logo=selenium)](#)
+[![](https://img.shields.io/badge/Data%20Engineering-0A66C2)](#)
+
+---
+
 ### Angel Reese v. Caitlin Clark: Few-shot learning Sentiment Analysis with GPT-3.5
 
 Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a text classifier using OpenAI's Chat API, combined with a semantic similarity pipeline using SBERT for generating optimized prompt examples. 
