@@ -41,12 +41,10 @@ This Project makes use of HTTP requests, the Spotify API, YouTube API, and final
 
 ---
 
-## Other Various Projects
-A selection of smaller projects demonstrating specific data science and ML skills.
+## Additional Projects & Exploratory Work
+A selection of smaller projects focused on algorithmic problem-solving, exploratory analysis, and foundational data science concepts.
 
-- [Solving CSP's using Forward Checking, LCV, MRV, and constraint propagation](https://github.com/williamzabet/6511-CSP-Problem-Solver)
-- [Finding the Shortest Path with Dijkstras and A*](https://github.com/williamzabet/6511-Shortest-Path)
-- [An Exploratory Analysis on Crime Rate in DC using various ML techniques](https://github.com/williamzabet/Crime-in-DC)
+- [**To Read or Not to Read** — Visualizes a personal library by comparing books using textual content and metadata similarity; allows unread books to be spatially compared relative to the existing collection](https://github.com/williamzabet/To-Read-Or-Not-To-Read)
 
 
 
