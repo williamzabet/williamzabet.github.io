@@ -8,6 +8,8 @@ Designed and implemented a data ingestion and enrichment pipeline that aggregate
 
 The resulting data model is structured to support downstream geospatial visualization and ZIP-level analysis, enabling interactive exploration of property attributes once connected to a visualization layer.
 
+ <img src="images/real_estate.png"  width="300" height="150">
+
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#)
 [![](https://img.shields.io/badge/Node.js-black?logo=node.js)](#)
 [![](https://img.shields.io/badge/SQL-white?logo=postgresql)](#)
@@ -20,7 +22,7 @@ The resulting data model is structured to support downstream geospatial visualiz
 
 Sentiment analysis is target-oriented, aiming to identify opinions or attitudes towards topics or entities. In this project, I built a text classifier using OpenAI's Chat API, combined with a semantic similarity pipeline using SBERT for generating optimized prompt examples. 
 
- <img src="https://drive.google.com/uc?id=1IAB6nWBJL87ABsSNZ0KMp25TggJ2x4_h"  width="300" height="150">
+ <img src="images/reese_clark.png"  width="300" height="150">
 
 [![](https://img.shields.io/badge/Python-white?logo=Python)](#) [![](https://img.shields.io/badge/Jupyter-black?logo=Jupyter)](#) [![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#) [![](https://img.shields.io/badge/YouTube-black?logo=youtube)](#) <br />
 [![](https://img.shields.io/badge/Twitter-white?logo=Twitter)](#) [![](https://img.shields.io/badge/OpenAI-black?logo=openai)](#) [![](https://img.shields.io/badge/HuggingFace_Transformers-white)](#)
